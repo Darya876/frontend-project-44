@@ -1,8 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const random = (max, min) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+export const random = (max, min) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 export const condition = (userAnswer, trueAnswer, userName) => {
   if (userAnswer == trueAnswer) {

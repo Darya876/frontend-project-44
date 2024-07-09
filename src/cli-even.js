@@ -8,7 +8,10 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 const evenOrNot = (randomNumber) => {
   let trueAnswer = '';
-  randomNumber % 2 === 0 ? (trueAnswer = 'yes') : (trueAnswer = 'no');
+  if (randomNumber % 2 === 0) {
+    trueAnswer = 'yes';
+  }
+  trueAnswer = 'no';
   return trueAnswer;
 };
 
