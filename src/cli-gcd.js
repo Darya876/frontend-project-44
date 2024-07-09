@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { random, condition } from './index.js';
+import { random, condition, congrats } from './index.js';
 
 console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');

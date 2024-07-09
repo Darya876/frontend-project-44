@@ -23,8 +23,8 @@ const userAnswer2 = readlineSync.question(
 const trueAnswer2 = number3 - number4;
 condition(userAnswer2, trueAnswer2, userName);
 
-const number5 = random(1, 50);
-const number6 = random(1, 50);
+const number5 = random(1, 10);
+const number6 = random(1, 10);
 const userAnswer3 = readlineSync.question(
   `Question: ${number5} * ${number6} \nYour answer: `,
 );
