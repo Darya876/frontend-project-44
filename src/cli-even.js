@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { congrats, random, condition } from './index.js';
+import { random, condition, congrats } from './index.js';
 
 console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
@@ -8,10 +8,7 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 const evenOrNot = (randomNumber) => {
   let trueAnswer = '';
-  if (randomNumber % 2 === 0) {
-    trueAnswer = 'yes';
-  }
-  trueAnswer = 'no';
+  randomNumber % 2 === 0 ? (trueAnswer = 'yes') : (trueAnswer = 'no');
   return trueAnswer;
 };
 
