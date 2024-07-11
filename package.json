@@ -2,15 +2,15 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/Darya876/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Darya876/frontend-project-44/actions)",
-  "main": "index.js",
+  "description": "Brain-games: 6 games to train your brain",
+  "main": "src/index.js",
   "bin": {
-    "brain-games": "bin/games/brain-games.js",
-    "brain-even": "bin/games/brain-even.js",
-    "brain-calc": "bin/games/brain-calc.js",
-    "brain-gcd": "bin/games/brain-gcd.js",
-    "brain-progression": "bin/games/brain-progression.js",
-    "brain-prime": "bin/games/brain-prime.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "binbrain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
