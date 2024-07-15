@@ -17,7 +17,7 @@ const runGame = (description, getRoundData) => {
       console.log('Correct!');
     }
   }
-  console.log(`Congratulations, ${userName}`);
+  console.log(`Congratulations, ${userName}!`);
   process.exit();
 };
 

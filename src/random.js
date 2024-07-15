@@ -1,5 +1,4 @@
-export const random = (max, min) =>
-  Math.floor(Math.random() * (max - min + 1)) + min;
+export const random = (max, min) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 export const sumOfNums = (num1, num2) => num1 + num2;
 
