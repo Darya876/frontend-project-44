@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import evenOrNot from '../src/games/cli-even.js';
+import logicEvenOrNot from '../src/games/even.js';
 
-console.log(evenOrNot(Number(process.argv[process.argv.length - 1])));
+logicEvenOrNot();

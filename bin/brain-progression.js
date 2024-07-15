@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import progression from '../src/games/cli-progression.js';
+import logicProgression from '../src/games/progression.js';
 
-console.log(progression(Number(process.argv[process.argv.length - 1])));
+logicProgression();

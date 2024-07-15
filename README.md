@@ -7,16 +7,15 @@
 
 # Hi there, this is a BRAIN-GAMES package!
 
-Here you can find a brain-games package which contains 6 games for training your brain:
+Here you can find a brain-games package which contains 5 games for training your brain:
 
-1. Brain-games
-2. Brain-even
-3. Brain-calc
-4. Brain-gcd
-5. Brain-progression
-6. Brain-prime
+1. Brain-even
+2. Brain-calc
+3. Brain-gcd
+4. Brain-progression
+5. Brain-prime
 
-Screenshots repository contains diffrent game outcomes
+Screenshots repository contains diffrent game outcomes.
 
 ## Install
 
@@ -31,7 +30,6 @@ $ make install
 ## Play games
 
 ```sh
-$ brain-games
 $ brain-even
 $ brain-calc
 $ brain-gcd
