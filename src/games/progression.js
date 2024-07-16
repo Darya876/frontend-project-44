@@ -1,5 +1,5 @@
 import runGame from '../index.js';
-import { random } from '../random.js';
+import random from '../random.js';
 
 const progression = (start, step, length) => {
   const result = [];
@@ -20,11 +20,9 @@ const getRoundData = () => {
   return [question, rightAnswer];
 };
 
-const logicProgression = () => {
+const startProgressionGame = () => {
   const description = 'What number is missing in the progression?';
   runGame(description, getRoundData);
 };
 
-logicProgression();
-
-export default logicProgression;
+export default startProgressionGame;

@@ -1,11 +1,10 @@
 import runGame from '../index.js';
-import { random } from '../random.js';
+import random from '../random.js';
 
-const primeOrNot = (randomNumber) => {
+const isPrime = (randomNumber) => {
   if (randomNumber < 2) {
     return false;
   }
-
   for (let i = 2; i < randomNumber / 2; i += 1) {
     if (randomNumber % i === 0) {
       return false;
@@ -16,16 +15,14 @@ const primeOrNot = (randomNumber) => {
 
 const getRoundData = () => {
   const number = random(1, 100);
-  const rightAnswer = primeOrNot(number) ? 'yes' : 'no';
+  const rightAnswer = isPrime(number) ? 'yes' : 'no';
   const question = number.toString();
   return [question, rightAnswer];
 };
 
-const logicPrimeOrNot = () => {
+const startPrimeGame = () => {
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   runGame(description, getRoundData);
 };
 
-logicPrimeOrNot();
-
-export default logicPrimeOrNot;
+export default startPrimeGame;

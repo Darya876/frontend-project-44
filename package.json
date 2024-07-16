@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "Brain-games: 6 games to train your brain",
+  "description": "Brain-games: 5 games to train your brain",
   "main": "src/index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",

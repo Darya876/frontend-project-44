@@ -1,23 +1,18 @@
 import runGame from '../index.js';
-import { random } from '../random.js';
+import random from '../random.js';
 
-const evenOrNot = (number) => {
-  const result = number % 2 === 0;
-  return result;
-};
+const isEven = (number) => number % 2 === 0;
 
 const getRoundData = () => {
   const number = random(1, 100);
-  const rightAnswer = evenOrNot(number) ? 'yes' : 'no';
+  const rightAnswer = isEven(number) ? 'yes' : 'no';
   const question = number.toString();
   return [question, rightAnswer];
 };
 
-const logicEvenOrNot = () => {
+const startEvenGame = () => {
   const description = 'Answer "yes" if the number is even, otherwise answer "no".';
   runGame(description, getRoundData);
 };
 
-logicEvenOrNot();
-
-export default logicEvenOrNot;
+export default startEvenGame;

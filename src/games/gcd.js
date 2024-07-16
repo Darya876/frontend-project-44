@@ -1,5 +1,5 @@
 import runGame from '../index.js';
-import { random } from '../random.js';
+import random from '../random.js';
 
 const nod = (x, y) => {
   if (y !== 0) {
@@ -18,11 +18,9 @@ const getRoundData = () => {
   return [question, rightAnswer];
 };
 
-const logicNod = () => {
+const startGcdGame = () => {
   const description = 'Find the greatest common divisor of given numbers.';
   runGame(description, getRoundData);
 };
 
-logicNod();
-
-export default logicNod;
+export default startGcdGame;

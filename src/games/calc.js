@@ -1,37 +1,39 @@
 import runGame from '../index.js';
-import { random } from '../random.js';
+import random from '../random.js';
 
-const sumOfNums = (num1, num2) => num1 + num2;
-
-const diffOfNums = (num1, num2) => num1 - num2;
-
-const multyplOfNums = (num1, num2) => num1 * num2;
-
-const getRandomOperator = (max) => Math.floor(Math.random() * max);
-
-const getRoundData = () => {
-  const operations = ['+', '-', '*'];
-  const number1 = random(1, 15);
-  const number2 = random(1, 15);
-  const operator = operations[getRandomOperator(3)];
-  const question = `${number1} ${operator} ${number2}`;
+const calculate = (num1, num2, operator) => {
   let result = 0;
-  if (operator === '+') {
-    result = sumOfNums(number1, number2);
-  } else if (operator === '-') {
-    result = diffOfNums(number1, number2);
-  } else if (operator === '*') {
-    result = multyplOfNums(number1, number2);
+  switch (operator) {
+    case '-':
+      result = num1 - num2;
+      break;
+    case '+':
+      result = num1 + num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    default:
+      throw new Error(`Unknown operation: '${operator}'!`);
   }
   const rightAnswer = result.toString();
+  return rightAnswer;
+};
+
+const getRoundData = () => {
+  const operations = ['-', '+', '*'];
+  const number1 = random(1, 15);
+  const number2 = random(1, 15);
+  const operationIndex = random(0, 2);
+  const operator = operations[operationIndex];
+  const question = `${number1} ${operator} ${number2}`;
+  const rightAnswer = calculate(number1, number2, operator);
   return [question, rightAnswer];
 };
 
-const logicCalc = () => {
+const startCalcGame = () => {
   const description = 'What is the result of the expression?';
   runGame(description, getRoundData);
 };
 
-logicCalc();
-
-export default logicCalc;
+export default startCalcGame;
